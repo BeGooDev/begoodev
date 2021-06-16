@@ -1,0 +1,16 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+
+$primary: #6c63ff;
+
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333333;
+$github-invert: findColorInvert($github);
+
+
+@import "~bulma/sass/utilities/derived-variables";
+@import '~bulma/bulma';
