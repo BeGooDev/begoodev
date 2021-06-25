@@ -2,7 +2,7 @@ export default function Header() {
     return (
         <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <a className="navbar-item" href="https://bulma.io">
+                <a className="navbar-item" href="/">
                     Philippe Gibert - BeGooDev
                 </a>
 
