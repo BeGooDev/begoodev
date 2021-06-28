@@ -1,4 +1,5 @@
 import MainLayout from "../layouts/main";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -32,7 +33,9 @@ export default function Home() {
                         </p>
                         <p className="pt-5">
                             <div className="buttons pt-4 is-centered">
-                                <button className="button is-primary">Prendre contact</button>
+                                <Link href="/contact">
+                                    <button className="button is-primary">Prendre contact</button>
+                                </Link>
                             </div>
                         </p>
                     </div>
