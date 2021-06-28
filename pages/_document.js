@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="fr">
+            <Html lang="fr" class="has-navbar-fixed-top">
                 <Head></Head>
                 <body>
                     <Main/>

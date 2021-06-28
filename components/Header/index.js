@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
                     Philippe Gibert - BeGooDev
