@@ -10,7 +10,12 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333333;
 $github-invert: findColorInvert($github);
-
+$email: #1FCE26;
+$email-invert: findColorInvert($email);
+$phone: #1FCE26;
+$phone-invert: findColorInvert($phone);
+$contact : #FF2D55;
+$contact-invert: findColorInvert($contact);
 
 @import "~bulma/sass/utilities/derived-variables";
 @import '~bulma/bulma';
