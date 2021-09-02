@@ -24,9 +24,14 @@ export default function Home() {
                             fortes charges et application mobiles de qualité.
                         </p>
                         <p className="my-5">
-                            Je suis très polyvalent! Je suis capable de maitriser votre projet dans son ensemble,
-                            depuis l'analyse de votre besoin, la mise en place de l'architecture application,
-                            l'optimisation, les tests, le développement, jusqu'a votre produit. Je porte une grande
+                            Je suis très polyvalent! Je suis capable de maitriser votre projet dans son ensemble :
+                            depuis l'analyse de votre besoin, la mise en place de l'architecture applicative,
+                            l'optimisation, les tests, le développement, etc... Je porte une grande
+                            attention à la
+                            qualité du
+                            code et au suivi de vos projets.  Je suis très polyvalent! Je suis capable de maitriser votre projet dans son ensemble :
+                            depuis l'analyse de votre besoin, la mise en place de l'architecture applicative,
+                            l'optimisation, les tests, le développement, etc... Je porte une grande
                             attention à la
                             qualité du
                             code et au suivi de vos projets.
@@ -51,7 +56,7 @@ export default function Home() {
                         <figure className="image is-square">
                             <img src="/svg/undraw_Web_developer_re_h7ie.svg"/>
                         </figure>
-                        <p>
+                        <p className="px-2">
                             Je prends en charge le développement de votre application web et mobile en veillant
                             concevoir
                             une architecture solide et à la qualité du code.
@@ -62,10 +67,9 @@ export default function Home() {
 
                             <img src="/svg/undraw_Code_thinking_re_gka2.svg"/>
                         </figure>
-                        <p>
-                            Votre application est lente? J'analyse votre code et vous conseil sur les bonnes pratiques
-                            pour
-                            booster vos projets!
+                        <p className="px-2">
+                            Votre application est lente?
+                            J'analyse votre code et vous conseil sur les bonnes pratiques pour booster vos projets!
                         </p>
                     </div>
                     <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">
@@ -73,7 +77,7 @@ export default function Home() {
 
                             <img src="/svg/undraw_Mobile_apps_re_3wjf.svg"/>
                         </figure>
-                        <p>
+                        <p className="px-2">
                             Besoin d'un conseil pour les choix technologiques de vos projets, sur les outils à mettre en
                             place pour faire du développement de qualité?
                             Je suis là!

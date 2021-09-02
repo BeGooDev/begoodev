@@ -8,15 +8,71 @@ $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
+$twitter-dark: findDarkColor($twitter);
 $github: #333333;
 $github-invert: findColorInvert($github);
-$email: #1FCE26;
-$email-invert: findColorInvert($email);
+$github-dark: findDarkColor($github);
+$mail: rgb(0,122,255);
+$mail-invert: findColorInvert($mail);
+$mail-dark: findDarkColor($mail);
 $phone: #1FCE26;
 $phone-invert: findColorInvert($phone);
+$phone-dark: findDarkColor($phone);
 $contact : #FF2D55;
 $contact-invert: findColorInvert($contact);
+$contact-dark: findDarkColor($contact);
+$linkedIn : #0a66c2;
+$linkeIn-invert: findColorInvert($linkedIn);
+$linkeIn-dark: findDarkColor($linkedIn);
 
 @import "~bulma/sass/utilities/derived-variables";
 @import '~bulma/bulma';
-@import '~font-awesome/css/font-awesome.min.css';
+@import '~font-awesome/css/font-awesome.css';
+
+@mixin buttonColored ($color, $colorDark) {
+  @at-root {
+    button#{&} {
+      background-color: $color;
+      color: $white;
+      &:hover{
+        color: white;
+        background-color: $colorDark;
+      }
+    }
+    a#{&} {
+      color: $color;
+      &:hover {
+        color: $colorDark;
+      }
+    }
+  }
+}
+
+.mail {
+  @include buttonColored($mail, $mail-dark);
+}
+
+.twitter {
+  @include buttonColored($twitter, $twitter-dark);
+}
+
+.github {
+  @include buttonColored($github, $github-dark);
+}
+
+.contact {
+  @include buttonColored($contact, $contact-dark);
+}
+
+
+.phone {
+  @include buttonColored($phone, $phone-dark);
+}
+
+.linkedIn {
+  @include buttonColored($linkedIn, $linkedIn);
+}
+
+.is-circular { border-radius: 50%; }
+
+

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Header() {
     return (
         <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
@@ -9,8 +11,8 @@ export default function Header() {
                 <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false"
                    data-target="navbarBasicExample">
                     <span aria-hidden="true"/>
-                    <span aria-hidden="true" />
-                    <span aria-hidden="true" />
+                    <span aria-hidden="true"/>
+                    <span aria-hidden="true"/>
                 </a>
             </div>
 
@@ -20,13 +22,13 @@ export default function Header() {
                 </div>
 
                 <div className="navbar-end">
-                    <a className="navbar-item">
-                        Développement
-                    </a>
 
-                    <a className="navbar-item">
-                        Contact
-                    </a>
+
+                    <Link href="contact">
+                        <a className="navbar-item">
+                            Contact
+                        </a>
+                    </Link>
                 </div>
             </div>
         </nav>
