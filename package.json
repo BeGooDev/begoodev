@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "rimraf out && next build && next export && echo 'begoodev.fr' > ./out/CNAME && touch ./out/.nojekyll && copy README.md ./out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -20,5 +21,9 @@
   },
   "main": "index.js",
   "author": "Philippe Gibert <philippe.gibert@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "copy": "^0.3.2",
+    "rimraf": "^3.0.2"
+  }
 }
