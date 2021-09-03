@@ -16,7 +16,7 @@ jobs:
           cmd: install
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: publish
+          cmd: deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "publish": "rimraf out && next build && next export && echo 'begoodev.fr' > ./out/CNAME && touch ./out/.nojekyll && copy README.md ./out"
+    "deploy": "rimraf out && next build && next export && echo 'begoodev.fr' > ./out/CNAME && touch ./out/.nojekyll && copy README.md ./out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
