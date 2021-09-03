@@ -24,7 +24,7 @@ export default function Header() {
                 <div className="navbar-end">
 
 
-                    <Link href="contact">
+                    <Link href="/contact">
                         <a className="navbar-item">
                             Contact
                         </a>

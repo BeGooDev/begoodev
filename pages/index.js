@@ -36,13 +36,13 @@ export default function Home() {
                             qualité du
                             code et au suivi de vos projets.
                         </p>
-                        <p className="pt-5">
+                        <div className="pt-5">
                             <div className="buttons pt-4 is-centered">
                                 <Link href="/contact">
                                     <button className="button is-primary">Prendre contact</button>
                                 </Link>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MainLayout from "../layouts/main";
-import {getEmail, getLinkedInUrl, getPhoneNum, getTwitterUrl} from "../config";
+import {getEmail, getLinkedInUrl, getPhoneNum, getTwitterDirectMessageUrl} from "../config";
 
 export default function ContactPage() {
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
                         </Link>
                     </div>
                     <div className="column is-one-third is-offset-one-third has-text-centered">
-                        <Link href={getTwitterUrl()}>
+                        <Link href={getTwitterDirectMessageUrl()}>
                             <button className="button is-large twitter is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-twitter"/>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                                 <span className="icon is-medium">
                                   <i className="fa fa-linkedin"/>
                                 </span>
-                                <span>Tweet moi</span>
+                                <span>LinkedIn</span>
                             </button>
                         </Link>
                     </div>

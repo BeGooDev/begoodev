@@ -4,6 +4,7 @@ const appConfig = {
     email: "contact@begoodev.fr",
     githubUser: "giboow",
     twitterUser: "giboow",
+    twitterRecipientId: "91543080",
     linkdeInUser: "pgibert",
     phoneNumber: "+33689247611",
 }
@@ -52,8 +53,12 @@ const getEmail = () => {
     return appConfig.email
 }
 
+const getTwitterDirectMessageUrl = () => {
+    return "https://twitter.com/messages/compose?recipient_id=" + appConfig.twitterRecipientId;
+}
+
 
 export default appConfig;
 
-export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail};
+export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl};
 

@@ -28,7 +28,7 @@ export default function Footer() {
                 </Link>
             </div>
             <p>
-                Made with ❤️ By <Link href={getTwitterUrl()}>{getPseudo()}</Link>
+                Made with ❤️ By <Link href={getTwitterUrl()}><a target="-_blank">{getPseudo()}</a></Link>
             </p>
         </div>
     </footer>)
