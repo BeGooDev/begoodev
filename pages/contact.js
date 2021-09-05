@@ -7,7 +7,6 @@ export default function ContactPage() {
 
     return (
         <MainLayout>
-            <Head></Head>
             <div className="container is-max-desktop pt-2 pb-é">
                 <h1 className="is-size-1-desktop has-text-centered">
                     Me contacter
