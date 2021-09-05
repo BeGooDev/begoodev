@@ -18,7 +18,7 @@ const getPseudo = () => {
  * @returns {string}
  */
 const getTwitterUrl = () => {
-    return "http://twitter.com/" +  appConfig.twitterUser;
+    return "https://twitter.com/" +  appConfig.twitterUser;
 }
 
 /**
@@ -26,7 +26,7 @@ const getTwitterUrl = () => {
  * @returns {string}
  */
 const getLinkedInUrl = () => {
-    return "http://linkedin.com/" + appConfig.linkdeInUser;
+    return "https://linkedin.com/in/" + appConfig.linkdeInUser;
 }
 
 /**
@@ -34,7 +34,7 @@ const getLinkedInUrl = () => {
  * @returns {string}
  */
 const getGithubUrl = () => {
-    return "http://github.com/" + appConfig.githubUser;
+    return "https://github.com/" + appConfig.githubUser;
 }
 
 /**

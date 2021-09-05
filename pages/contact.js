@@ -1,11 +1,13 @@
 import Link from "next/link";
 import MainLayout from "../layouts/main";
 import {getEmail, getLinkedInUrl, getPhoneNum, getTwitterDirectMessageUrl} from "../config";
+import {Head} from "next/document";
 
 export default function ContactPage() {
 
     return (
         <MainLayout>
+            <Head></Head>
             <div className="container is-max-desktop pt-2 pb-é">
                 <h1 className="is-size-1-desktop has-text-centered">
                     Me contacter
@@ -18,64 +20,74 @@ export default function ContactPage() {
                 <div className="columns is-multiline mt-5 mt-5">
                     <div className="column is-one-third is-offset-one-third">
                         <Link href={"sms:" + getPhoneNum()}>
-                            <button className="button is-large phone is-fullwidth">
+                            <a title="Envoyez moi un message!">
+                                <button className="button is-large phone is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-comment"/>
                                 </span>
-                                <span>SMS</span>
-                            </button>
+                                    <span>SMS</span>
+                                </button>
+                            </a>
                         </Link>
                     </div>
                     <div className="column is-one-third is-offset-one-third">
                         <Link href={"mailto:" + getEmail()}>
-                            <button className="mail button is-large email is-fullwidth">
+                            <a title="Envoyez moi un email!">
+                                <button className="mail button is-large email is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-envelope"/>
                                 </span>
-                                <span>Email</span>
-                            </button>
+                                    <span>Email</span>
+                                </button>
+                            </a>
                         </Link>
                     </div>
                     <div className="column is-one-third is-offset-one-third">
                         <Link href={"tel:" + getPhoneNum()}>
-                            <button className="button is-large phone is-fullwidth">
+                            <a title="Appelez moi!">
+                                <button className="button is-large phone is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-phone"/>
                                 </span>
-                                <span>Téléphone</span>
-                            </button>
+                                    <span>Téléphone</span>
+                                </button>
+                            </a>
                         </Link>
                     </div>
                     <div className="column is-one-third is-offset-one-third has-text-centered">
                         <Link href={getTwitterDirectMessageUrl()}>
-                            <button className="button is-large twitter is-fullwidth">
+                            <a title="Envoyez moi un message sur Twitter!" target="_blank">
+                                <button className="button is-large twitter is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-twitter"/>
                                 </span>
-                                <span>Tweet moi</span>
-                            </button>
+                                    <span>Tweet moi</span>
+                                </button>
+                            </a>
                         </Link>
                     </div>
                     <div className="column is-one-third is-offset-one-third has-text-centered">
                         <Link href={getLinkedInUrl()}>
-                            <button className="button is-large linkedIn is-fullwidth">
+                            <a title="Connectons nous sur LinkedIn!" target="_blank">
+                                <button className="button is-large linkedIn is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-linkedin"/>
                                 </span>
-                                <span>LinkedIn</span>
-                            </button>
+                                    <span>LinkedIn</span>
+                                </button>
+                            </a>
                         </Link>
                     </div>
-                    <div className="column is-one-third is-offset-one-third">
-                        <Link href="/PhilipeGibert.vcf">
-                            <button className="button is-large contact is-fullwidth">
-                                <span className="icon is-medium">
-                                  <i className="fa fa-smile-o"/>
-                                </span>
-                                <span>Ajoute Moi</span>
-                            </button>
-                        </Link>
-                    </div>
+                    {/*<div className="column is-one-third is-offset-one-third">*/}
+                    {/*    <Link href="/PhilipeGibert.vcf">*/}
+                    {/*        <button className="button is-large contact is-fullwidth">*/}
+                    {/*            <span className="icon is-medium">*/}
+                    {/*              <i className="fa fa-smile-o"/>*/}
+                    {/*            </span>*/}
+                    {/*            <span>Ajoute Moi</span>*/}
+                    {/*        </button>*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </MainLayout>

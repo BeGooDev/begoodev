@@ -1,12 +1,13 @@
 import MainLayout from "../layouts/main";
 import Link from "next/link";
+import {Head} from "next/document";
 
 export default function Home() {
     return (
         <MainLayout>
             <div className="container is-max-desktop p-5">
                 <h1 className="is-size-1-desktop has-text-centered">
-                    Développeur freelance d'application web et mobiles
+                    Développeur freelance d'application web et mobiles sur le bassin Rennais.
                 </h1>
             </div>
 
@@ -54,7 +55,7 @@ export default function Home() {
                 <div className="columns is-mobile is-multiline">
                     <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">
                         <figure className="image is-square">
-                            <img src="/svg/undraw_Web_developer_re_h7ie.svg"/>
+                            <img src="/svg/undraw_Web_developer_re_h7ie.svg" alt="Mes compétences"/>
                         </figure>
                         <p className="px-2">
                             Je prends en charge le développement de votre application web et mobile en veillant
@@ -65,7 +66,7 @@ export default function Home() {
                     <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">
                         <figure className="image is-square">
 
-                            <img src="/svg/undraw_Code_thinking_re_gka2.svg"/>
+                            <img src="/svg/undraw_Code_thinking_re_gka2.svg" alt="boostez vos projets" />
                         </figure>
                         <p className="px-2">
                             Votre application est lente?
@@ -75,7 +76,7 @@ export default function Home() {
                     <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">
                         <figure className="image is-square">
 
-                            <img src="/svg/undraw_Mobile_apps_re_3wjf.svg"/>
+                            <img src="/svg/undraw_Mobile_apps_re_3wjf.svg" alt="Besoin d'un conseil?"/>
                         </figure>
                         <p className="px-2">
                             Besoin d'un conseil pour les choix technologiques de vos projets, sur les outils à mettre en
