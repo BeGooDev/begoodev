@@ -6,7 +6,9 @@ const appConfig = {
     twitterUser: "giboow",
     twitterRecipientId: "91543080",
     linkdeInUser: "pgibert",
-    phoneNumber: "+33689247611",
+    phoneNumber: "+33674822191",
+    maltId: "philippegibert"
+
 }
 
 const getPseudo = () => {
@@ -57,8 +59,11 @@ const getTwitterDirectMessageUrl = () => {
     return "https://twitter.com/messages/compose?recipient_id=" + appConfig.twitterRecipientId;
 }
 
+const getMaltUrl = () => {
+    return "https://www.malt.fr/profile/" + appConfig.maltId;
+}
 
 export default appConfig;
 
-export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl};
+export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl, getMaltUrl};
 

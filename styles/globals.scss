@@ -22,8 +22,11 @@ $contact : #FF2D55;
 $contact-invert: findColorInvert($contact);
 $contact-dark: findDarkColor($contact);
 $linkedIn : #0a66c2;
-$linkeIn-invert: findColorInvert($linkedIn);
-$linkeIn-dark: findDarkColor($linkedIn);
+$linkedIn-invert: findColorInvert($linkedIn);
+$linkedIn-dark: findDarkColor($linkedIn);
+$malt: rgb(253,86,86);
+$malt-dark: findDarkColor($malt);
+$malt-invert: findColorInvert($malt);
 
 @import "~bulma/sass/utilities/derived-variables";
 @import '~bulma/bulma';
@@ -70,9 +73,24 @@ $linkeIn-dark: findDarkColor($linkedIn);
 }
 
 .linkedIn {
-  @include buttonColored($linkedIn, $linkedIn);
+  @include buttonColored($linkedIn, $linkedIn-dark);
+}
+
+.malt {
+  @include buttonColored($malt, $malt-dark);
 }
 
 .is-circular { border-radius: 50%; }
 
 
+// Add malt logo
+.fa {
+  &.fa-malt:before {
+    display: block;
+    content: ' ';
+    background-image: url('/svg/malt-logo.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+  }
+}
