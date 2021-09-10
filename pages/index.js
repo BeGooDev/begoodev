@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>BeGooDev, Développeur freelance d'application web et mobiles sur le bassin Rennais.</title>
+                <title>BeGooDev, Développeur d'applications web et mobiles sur Rennes</title>
             </Head>
             <MainLayout>
 

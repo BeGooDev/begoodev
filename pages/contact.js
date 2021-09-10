@@ -8,8 +8,7 @@ export default function ContactPage() {
     return (
         <>
             <Head>
-                <title>BeGooDev, Développeur freelance d'application web et mobiles sur le bassin Rennais, contactez
-                    moi!</title>
+                <title>Contactez moi</title>
             </Head>
             <MainLayout>
                 <div className="container is-max-desktop pt-2 pb-é">
