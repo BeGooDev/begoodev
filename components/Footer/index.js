@@ -28,7 +28,10 @@ export default function Footer() {
                 </Link>
             </div>
             <p>
-                Made with ❤️ By <Link href={getTwitterUrl()}><a target="-_blank">{getPseudo()}</a></Link>
+                <span className="has-text-weight-light">Made with ❤️ By </span> <Link href={getTwitterUrl()}><a target="-_blank">{getPseudo()}</a></Link>
+            </p>
+            <p>
+                <span className="has-text-weight-light">Illustrations: </span> <a href="http://undraw.co">undraw.co</a>
             </p>
         </div>
     </footer>)
