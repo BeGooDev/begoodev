@@ -5,13 +5,19 @@ import Head from "next/head";
 
 export default function ContactPage() {
 
+    const propsLayout = {
+        header: {
+            nav: {active: 'contact'}
+        }
+    }
+
     return (
         <>
             <Head>
-                <title>Contactez moi</title>
+                <title>BeGooDev -Contactez moi</title>
             </Head>
-            <MainLayout>
-                <div className="container is-max-desktop pt-2 pb-é">
+            <MainLayout {...propsLayout}>
+                <div className="container is-max-desktop">
                     <h1 className="is-size-1-desktop has-text-centered">
                         Me contacter
                     </h1>
@@ -84,7 +90,7 @@ export default function ContactPage() {
                         <div className="column is-one-third is-offset-one-third has-text-centered">
                             <Link href={getMaltUrl()}>
                                 <a title="Une mission a me proposer" target="_blank">
-                                <button className="button is-large malt is-fullwidth">
+                                    <button className="button is-large malt is-fullwidth">
                                 <span className="icon is-medium">
                                   <i className="fa fa-8x fa-malt"/>
                                 </span>

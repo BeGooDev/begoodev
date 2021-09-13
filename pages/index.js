@@ -10,7 +10,7 @@ export default function Home() {
             </Head>
             <MainLayout>
 
-                <div className="container is-max-desktop p-5">
+                <div className="container is-max-desktop">
                     <h1 className="is-size-1-desktop has-text-centered">
                         Développeur freelance d'application web et mobiles sur le bassin Rennais.
                     </h1>

@@ -33,7 +33,6 @@ export default function page404() {
                         </div>
                     </div>
                 </section>
-
             </MainLayout>
         </>);
 }

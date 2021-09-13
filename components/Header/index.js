@@ -5,6 +5,12 @@ import {Component} from 'react';
 
 
 class Header extends Component{
+    static defaultProps = {
+        nav : {
+            active : ''
+        }
+    }
+    
     state = {
         activeToggleNav: false
     }
@@ -26,6 +32,7 @@ class Header extends Component{
 
     render() {
         const {activeToggleNav} = this.state;
+        console.log(this.props);
 
         return (
             <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
@@ -49,10 +56,14 @@ class Header extends Component{
                     </div>
 
                     <div className="navbar-end">
-
+                        <Link href="/developpement">
+                            <a className={classNames("navbar-item", {"is-active" : this.props.nav?.active === 'development'  })}>
+                                Développement
+                            </a>
+                        </Link>
 
                         <Link href="/contact">
-                            <a className="navbar-item">
+                            <a className={classNames("navbar-item", {"is-active" : this.props.nav.active === 'contact'})}>
                                 Contact
                             </a>
                         </Link>
@@ -62,5 +73,8 @@ class Header extends Component{
         )
     }
 }
+
+
+
 
 export default Header
