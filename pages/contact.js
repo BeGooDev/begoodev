@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MainLayout from "../layouts/main";
-import {getEmail, getLinkedInUrl, getPhoneNum, getTwitterDirectMessageUrl, getMaltUrl} from "../config";
+import {getEmail, getLinkedInUrl, getPhoneNum, getTwitterDirectMessageUrl, getMaltUrl, getTwitterUrl, getTwitterUser, getEmailWithSpaces} from "../config";
 import Head from "next/head";
 
 export default function ContactPage() {
@@ -22,56 +22,77 @@ export default function ContactPage() {
                         Me contacter
                     </h1>
                 </div>
-                <div className="container is-max-desktop pt-2 pb-6">
-                    <p className="is-size-2 has-text-centered">Vous avez de la chance, je suis <span
-                        className="has-text-weight-bold">disponible!</span></p>
-
-                    <div className="columns is-multiline mt-5 mt-5">
+                <div className="container is-max-desktop">
+                    <h2 className="subtitle has-text-centered">Vous avez de la chance, je suis <span
+                        className="has-text-weight-bold">disponible!</span></h2>
+                </div>
+                <div className="container is-max-desktop">
+                    <hr/>
+                </div>
+                <div className="container is-max-desktop">
+                    <div className="columns is-multiline">
                         <div className="column is-one-third is-offset-one-third">
                             <Link href={"sms:" + getPhoneNum()}>
                                 <a title="Envoyez moi un message!">
-                                    <button className="button is-large phone is-fullwidth">
-                                <span className="icon is-medium">
-                                  <i className="fa fa-comment"/>
-                                </span>
-                                        <span>SMS</span>
-                                    </button>
+                                    <div
+                                        className="phone button is-large phone is-fullwidth is-flex-direction-column p-5">
+                                        <div>
+                                            <span className="icon is-medium"><i className="fa fa-comment"/></span>
+                                            <span>SMS</span>
+                                        </div>
+                                        <div className="has-text-weight-light is-size-6">
+                                            {getPhoneNum()}
+                                        </div>
+                                    </div>
                                 </a>
                             </Link>
                         </div>
                         <div className="column is-one-third is-offset-one-third">
                             <Link href={"mailto:" + getEmail()}>
                                 <a title="Envoyez moi un email!">
-                                    <button className="mail button is-large email is-fullwidth">
-                                <span className="icon is-medium">
-                                  <i className="fa fa-envelope"/>
-                                </span>
-                                        <span>Email</span>
-                                    </button>
+                                    <div
+                                        className="button is-large mail is-fullwidth is-flex-direction-column p-5">
+                                        <div>
+                                        <span className="icon is-medium"><i className="fa fa-envelope"/></span>
+                                            <span>Email</span>
+                                        </div>
+                                        <div className="has-text-weight-light is-size-6">
+                                            {getEmailWithSpaces()}
+                                        </div>
+                                    </div>
+                                </a>
+                            </Link>
+                        </div>
+
+                        <div className="column is-one-third is-offset-one-third">
+                            <Link href={"tel:" + getPhoneNum()}>
+                                <a title="Appelez moi!">
+                                    <div
+                                        className="phone button is-large is-fullwidth is-flex-direction-column p-5">
+                                        <div>
+                                            <span className="icon is-medium"><i className="fa fa-phone"/></span>
+                                            <span>Téléphone</span>
+                                        </div>
+                                        <div className="has-text-weight-light is-size-6">
+                                            {getPhoneNum()}
+                                        </div>
+                                    </div>
                                 </a>
                             </Link>
                         </div>
                         <div className="column is-one-third is-offset-one-third">
-                            <Link href={"tel:" + getPhoneNum()}>
-                                <a title="Appelez moi!">
-                                    <button className="button is-large phone is-fullwidth">
-                                <span className="icon is-medium">
-                                  <i className="fa fa-phone"/>
-                                </span>
-                                        <span>Téléphone</span>
-                                    </button>
-                                </a>
-                            </Link>
-                        </div>
-                        <div className="column is-one-third is-offset-one-third has-text-centered">
                             <Link href={getTwitterDirectMessageUrl()}>
                                 <a title="Envoyez moi un message sur Twitter!" target="_blank">
-                                    <button className="button is-large twitter is-fullwidth">
-                                <span className="icon is-medium">
-                                  <i className="fa fa-twitter"/>
-                                </span>
-                                        <span>Tweet moi</span>
-                                    </button>
+                                    <div
+                                        className="twitter button is-large is-fullwidth is-flex-direction-column p-5">
+                                        <div>
+                                            <span className="icon is-medium"><i className="fa fa-twitter"/></span>
+                                            <span>Twitter</span>
+                                        </div>
+                                        <div className="has-text-weight-light is-size-6">
+                                            {getTwitterUser()}
+                                        </div>
+                                    </div>
                                 </a>
                             </Link>
                         </div>

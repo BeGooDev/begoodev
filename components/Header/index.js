@@ -56,7 +56,7 @@ class Header extends Component{
                     </div>
 
                     <div className="navbar-end">
-                        <Link href="/developpement">
+                        <Link href="/development">
                             <a className={classNames("navbar-item", {"is-active" : this.props.nav?.active === 'development'  })}>
                                 Développement
                             </a>

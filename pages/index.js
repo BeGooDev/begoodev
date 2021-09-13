@@ -10,17 +10,24 @@ export default function Home() {
             </Head>
             <MainLayout>
 
-                <div className="container is-max-desktop">
-                    <h1 className="is-size-1-desktop has-text-centered">
-                        Développeur freelance d'application web et mobiles sur le bassin Rennais.
+                <div className="container is-max-desktop has-text-centered">
+                    <h1 className="is-size-1">
+                        Développeur freelance
                     </h1>
+                    <div className="subtitle">
+                        Réalisation de vos application web et mobiles sur le bassin Rennais
+                    </div>
+                </div>
+
+                <div className="container is-max-desktop">
+                    <hr />
                 </div>
 
                 <div className="container is-max-desktop p-5">
                     <div className="columns is-multiline is-mobile">
                         <div className="column is-4-desktop is-full-mobile">
-                            <figure className="image is-square">
-                                <img className="has-ratio" width="580" height="580" src="/img/photo-profil.jpg"
+                            <figure className="image">
+                                <img className="has-ratio is-rounded" width="580" height="580" src="/img/photo-profil.jpg"
                                      alt="Philippe Gibert Développeur Freelance"/>
                             </figure>
                         </div>
@@ -89,6 +96,9 @@ export default function Home() {
                                 Je suis là!
                             </p>
                         </div>
+                    </div>
+                    <div className="buttons is-centered">
+                        <Link href="/development"><a><button className="button">Découvrez ma stack!</button></a></Link>
                     </div>
                 </div>
             </MainLayout>

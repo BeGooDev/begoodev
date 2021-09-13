@@ -6,7 +6,7 @@ const appConfig = {
     twitterUser: "giboow",
     twitterRecipientId: "91543080",
     linkdeInUser: "pgibert",
-    phoneNumber: "+33674822191",
+    phoneNumber: "+33 6 74 82 21 91",
     maltId: "philippegibert"
 
 }
@@ -22,6 +22,16 @@ const getPseudo = () => {
 const getTwitterUrl = () => {
     return "https://twitter.com/" +  appConfig.twitterUser;
 }
+
+
+/**
+ * Get twitterUrl
+ * @returns {string}
+ */
+const getTwitterUser = () => {
+    return "@" +  appConfig.twitterUser;
+}
+
 
 /**
  * Get linkedInUrl
@@ -55,6 +65,10 @@ const getEmail = () => {
     return appConfig.email
 }
 
+const getEmailWithSpaces = () => {
+    return appConfig.email.replace('@', ' @ ');
+}
+
 const getTwitterDirectMessageUrl = () => {
     return "https://twitter.com/messages/compose?recipient_id=" + appConfig.twitterRecipientId;
 }
@@ -65,5 +79,5 @@ const getMaltUrl = () => {
 
 export default appConfig;
 
-export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl, getMaltUrl};
+export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl, getMaltUrl, getTwitterUser, getEmailWithSpaces};
 

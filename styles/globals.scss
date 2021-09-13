@@ -34,7 +34,7 @@ $malt-invert: findColorInvert($malt);
 
 @mixin buttonColored ($color, $colorDark) {
   @at-root {
-    button#{&} {
+    button#{&}, .button#{&} {
       background-color: $color;
       color: $white;
       &:hover{
