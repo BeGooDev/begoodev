@@ -26,7 +26,7 @@ export default function Hero() {
         <div className={classNames("hero is-fullwidth is-medium has-text-white background-transition", newSlogan.class)}>
             <div className="hero-body has-text-centered">
                 <img src="/img/logo_begoodev-white.png"/>
-                <h4 className="mt-5 is-size-4">
+                <h4 className="mt-5 is-size-4-desktop">
                     {newSlogan.text}
                 </h4>
             </div>
