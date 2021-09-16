@@ -28,6 +28,13 @@ $malt: rgb(253,86,86);
 $malt-dark: findDarkColor($malt);
 $malt-invert: findColorInvert($malt);
 
+
+$blue-dark: #27356A;
+$blue-light: #5EA5E1;
+$pink: #CB1C8E;
+$green-water: #73B9AA;
+$orange: #E8B12C;
+
 @import "~bulma/sass/utilities/derived-variables";
 @import '~bulma/bulma';
 @import '~font-awesome/css/font-awesome.css';
@@ -93,4 +100,26 @@ $malt-invert: findColorInvert($malt);
     height: 28px;
     width: 28px;
   }
+}
+
+.color-blueLight{
+  background-color: $blue-light;
+}
+.color-blueDark{
+  background-color: $blue-dark;
+}
+.color-pink {
+  background-color: $pink;
+}
+
+.color-greenWater {
+  background-color: $green-water;
+}
+
+.color-orange {
+  background-color: $orange;
+}
+
+.background-transition {
+    transition: background-color 1s ease;
 }

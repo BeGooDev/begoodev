@@ -4,7 +4,7 @@ import {getEmail, getGithubUrl, getPseudo, getTwitterUrl} from "../../config";
 
 export default function Footer() {
 
-    return (<footer className="footer">
+    return (<footer className="footer mt-5">
         <div className="content has-text-centered">
 
             <div className="is-centered mb-5">

@@ -1,6 +1,7 @@
 import MainLayout from "../layouts/main";
 import Link from "next/link";
 import Head from "next/head";
+import Hero from '../components/Hero'
 
 export default function Home() {
     return (
@@ -9,8 +10,11 @@ export default function Home() {
                 <title>BeGooDev, Développeur d'applications web et mobiles sur Rennes</title>
             </Head>
             <MainLayout>
+                <Hero></Hero>
 
                 <div className="container is-max-desktop has-text-centered">
+
+
                     <h1 className="is-size-1">
                         Développeur freelance
                     </h1>

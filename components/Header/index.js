@@ -32,13 +32,16 @@ class Header extends Component{
 
     render() {
         const {activeToggleNav} = this.state;
-        console.log(this.props);
 
         return (
             <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="/">
-                        Philippe Gibert - BeGooDev
+                    {/*<a className="navbar-item" href="/">*/}
+                    {/*    Philippe Gibert - BeGooDev*/}
+                    {/*</a>*/}
+
+                    <a className="navbar-item is-vcentered" href="/">
+                        <img src="/img/logo_begoodev-white.png" width="200" height="32" />
                     </a>
 
                     <a role="button" className={classNames('navbar-burger', {'is-active': activeToggleNav})}
