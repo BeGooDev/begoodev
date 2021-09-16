@@ -42,11 +42,6 @@ export default function Home() {
                                 l'optimisation, les tests, le développement, etc... Je porte une grande
                                 attention à la
                                 qualité du
-                                code et au suivi de vos projets.  Je suis très polyvalent! Je suis capable de maitriser votre projet dans son ensemble :
-                                depuis l'analyse de votre besoin, la mise en place de l'architecture applicative,
-                                l'optimisation, les tests, le développement, etc... Je porte une grande
-                                attention à la
-                                qualité du
                                 code et au suivi de vos projets.
                             </p>
                             <div className="pt-5">
