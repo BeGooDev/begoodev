@@ -19,7 +19,7 @@ export default function Home() {
                         Développeur freelance
                     </h1>
                     <div className="subtitle">
-                        Réalisation de vos application web et mobiles sur le bassin Rennais
+                        Réalisation de vos applications web et mobiles sur le bassin Rennais
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ export default function Home() {
                         <div className="column">
                             <p>
                                 Je suis développeur web depuis plus de 13 ans, spécialisé dans les applications complexes à
-                                fortes charges et application mobiles de qualité.
+                                fortes charges et applications mobiles de qualité.
                             </p>
                             <p className="my-5">
                                 Je suis très polyvalent! Je suis capable de maitriser votre projet dans son ensemble :
@@ -81,7 +81,7 @@ export default function Home() {
                             </figure>
                             <p className="px-2">
                                 Votre application est lente?
-                                J'analyse votre code et vous conseil sur les bonnes pratiques pour booster vos projets!
+                                J'analyse votre code et vous conseille sur les bonnes pratiques pour booster vos projets!
                             </p>
                         </div>
                         <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">
