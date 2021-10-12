@@ -69,9 +69,8 @@ export default function Home() {
                                 <img src="/svg/undraw_Web_developer_re_h7ie.svg" alt="Mes compétences"/>
                             </figure>
                             <p className="px-2">
-                                Je prends en charge le développement de votre application web et mobile en veillant
-                                concevoir
-                                une architecture solide et à la qualité du code.
+                                Je prends en charge le développement de votre application web et mobile en veillant à
+                                concevoir une architecture solide et en prenant soin de la qualité du code.
                             </p>
                         </div>
                         <div className="column is-one-third-desktop is-full-mobile has-text-centered-mobile">

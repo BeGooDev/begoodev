@@ -34,7 +34,7 @@ export default function stackPage() {
                                 choses.
                             </p>
                             <p>
-                                Mon profil polyvalent et mes capacité d'adaptation me permettent de m'acclimater
+                                Mon profil polyvalent et mes capacités d'adaptation me permettent de m'acclimater
                                 l'environnement de travail de votre équipe.
                                 De plus je suis un excellent intermediaire technique pour faciliter les echanges entre
                                 les
@@ -52,10 +52,10 @@ export default function stackPage() {
 
                         <section className="section">
                             <h3 className="is-size-3">
-                                Voici les technologie que je maitrise :
+                                Voici les technologies que je maitrise :
                             </h3>
                             <div className="columns is-multiline">
-                                <div className="column is-offset-one-third-desktop is-one-third-desktop">
+                                <div className="column is-center">
                                     <h4 className="title is-size-4">
                                         Backend
                                     </h4>
