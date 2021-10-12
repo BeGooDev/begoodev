@@ -4,11 +4,11 @@ sitemap({
     baseUrl: "https://begoodev.fr",
     ignoredPaths: [],
     extraPaths: [],
-    pagesDirectory: __dirname + "/pages",
+    pagesDirectory: __dirname + "/out",
     targetDirectory: "out/",
     sitemapFilename: "sitemap.xml",
     nextConfigPath: __dirname + "/next.config.js",
-    ignoredExtensions: ["png", "jpg"],
+    ignoredExtensions: ["png", "jpg", "css", "md", "ico", "webp", "xml", "svg"],
     pagesConfig: {
         // "/login": {
         //     priority: "0.5",
@@ -16,13 +16,13 @@ sitemap({
         // },
     },
     sitemapStylesheet: [
-        {
-            type: "text/css",
-            styleFile: "/test/styles.css",
-        },
+        // {
+        //     type: "text/css",
+        //     styleFile: "/test/styles.css",
+        // },
         {
             type: "text/xsl",
-            styleFile: "test/test/styles.xls",
+            styleFile: "sitemap.xls",
         },
     ],
 });
