@@ -22,7 +22,7 @@ sitemap({
         // },
         {
             type: "text/xsl",
-            styleFile: "sitemap.xls",
+            styleFile: "sitemap.xsl",
         },
     ],
 });
