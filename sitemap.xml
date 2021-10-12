@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/test/styles.css" type="text/css" ?>
-<?xml-stylesheet href="test/test/styles.xls" type="text/xsl" ?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="sitemap.xls" type="text/xsl" ?>
 
       <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
@@ -9,6 +8,11 @@
       
 	<url>
 		<loc>https://begoodev.fr/404</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://begoodev.fr</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
 
@@ -24,6 +28,21 @@
 
 	<url>
 		<loc>https://begoodev.fr/index</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://begoodev.fr/robots</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://begoodev.fr/site</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://begoodev.fr/sitemap</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
 </urlset>
