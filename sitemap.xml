@@ -30,19 +30,4 @@
 		<loc>https://begoodev.fr/index</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
-
-	<url>
-		<loc>https://begoodev.fr/robots</loc>
-		<lastmod>2021-10-12</lastmod>
-	</url>
-
-	<url>
-		<loc>https://begoodev.fr/site</loc>
-		<lastmod>2021-10-12</lastmod>
-	</url>
-
-	<url>
-		<loc>https://begoodev.fr/sitemap</loc>
-		<lastmod>2021-10-12</lastmod>
-	</url>
 </urlset>
