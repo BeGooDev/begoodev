@@ -96,7 +96,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="buttons is-centered">
-                        <Link href="/development"><a><button className="button">Découvrez ma stack!</button></a></Link>
+                        <Link href="/development"><button className="button">Découvrez ma stack!</button></Link>
                     </div>
                 </div>
             </MainLayout>

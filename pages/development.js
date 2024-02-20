@@ -155,12 +155,10 @@ export default function stackPage() {
                                 Je n'hésiterai donc pas à enrichir cette liste.
                             </p>
                             <div className="buttons is-centered">
-                            <Link href="/contact">
-                                <a title="Contactez-moi">
+                            <Link href="/contact" title="Contactez-moi">
                                     <button className="button is-primary">
                                         Alors contactez-moi!
                                     </button>
-                                </a>
                             </Link>
                             </div>
                         </section>
