@@ -77,7 +77,17 @@ const getMaltUrl = () => {
     return "https://www.malt.fr/profile/" + appConfig.maltId;
 }
 
+const slogans = [
+    {text: "Développement d'applications de qualité!", class: "color-blueLight"},
+    {text: "Boostez votre équipe avec un lead développeur passionné et engagé.", class: "color-pink"},
+    {text: "Transformez vos idées en réalité, avec un expert du développement.", class: "color-greenWater    "},
+    {text: "Votre imagination est la seule limite. Ensemble, dépassons-la!", class: "color-blueDark"},
+    {text: "L'art du code au service de votre vision.", class: "color-orange"},
+]
+
+
 export default appConfig;
 
-export {getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl, getMaltUrl, getTwitterUser, getEmailWithSpaces};
+export {slogans, getTwitterUrl, getLinkedInUrl, getPhoneNum, getPseudo, getGithubUrl, getEmail, getTwitterDirectMessageUrl, getMaltUrl, getTwitterUser, getEmailWithSpaces};
+
 

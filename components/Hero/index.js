@@ -1,13 +1,7 @@
 import {useCallback, useEffect, useState} from "react";
 import classNames from "classnames";
+import {slogans} from "../../config";
 
-const slogans = [
-    {text: "Développement d'applications de qualité!", class: "color-blueLight"},
-    {text: "La passion du code!", class: "color-pink"},
-    {text: "Le développement de vos projets de A à Z!", class: "color-greenWater    "},
-    {text: "Pour mettre vos Idées en Application, et inversement!", class: "color-blueDark"},
-    {text: "Un souci de performance? Je vous aide à booster vos apps.", class: "color-orange"},
-]
 
 export default function Hero() {
     const [newSlogan, setnewSlogan] = useState(slogans[0]);
