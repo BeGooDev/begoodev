@@ -44,7 +44,3 @@ jobs:
         with:
           branch: out # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
-      - name: Ping Sitemap
-        uses: atymic/sitemap-ping-action@master
-        with:
-          sitemap-url: http://begoodev.fr/sitemap.xml
