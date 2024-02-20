@@ -61,7 +61,7 @@ export default function ContactPage() {
                         </div>
 
                         <div className="column is-one-third is-offset-one-third">
-                            <Link href={`tel:${getPhoneNum()}`}> title="Appelez moi!">
+                            <Link href={`tel:${getPhoneNum()}`} title="Appelez moi!" >
                                 <div
                                     className="phone button is-large is-fullwidth is-flex-direction-column p-5">
                                     <div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                             </Link>
                         </div>
                         <div className="column is-one-third is-offset-one-third">
-                            <Link href={`${getTwitterDirectMessageUrl()}`}> title="Envoyez moi un message sur Twitter!" target="_blank">
+                            <Link href={`${getTwitterDirectMessageUrl()}`} title="Envoyez moi un message sur Twitter!" target="_blank">
                                 <div
                                     className="twitter button is-large is-fullwidth is-flex-direction-column p-5">
                                     <div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                             </Link>
                         </div>
                         <div className="column is-one-third is-offset-one-third has-text-centered">
-                            <Link href={`${getLinkedInUrl()}`}> title="Connectons nous sur LinkedIn!" target="_blank">
+                            <Link href={`${getLinkedInUrl()}`} title="Connectons nous sur LinkedIn!" target="_blank">
                                 <button className="button is-large linkedIn is-fullwidth">
                                     <span className="icon is-medium">
                                         <i className="fa fa-linkedin" />
@@ -99,7 +99,7 @@ export default function ContactPage() {
                             </Link>
                         </div>
                         <div className="column is-one-third is-offset-one-third has-text-centered">
-                            <Link href={${getMaltUrl()}> title="Une mission a me proposer" target="_blank">
+                            <Link href={`${getMaltUrl()}`} title="Une mission a me proposer" target="_blank">
                                 <button className="button is-large malt is-fullwidth">
                                     <span className="icon is-medium">
                                         <i className="fa fa-8x fa-malt" />
