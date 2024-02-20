@@ -1,4 +1,4 @@
-name: Publish to https://giboow.fr
+name: Publish to https://begoodev.fr
 on:
   push:
     branches:
