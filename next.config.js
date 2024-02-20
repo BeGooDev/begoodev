@@ -4,9 +4,6 @@ module.exports = {
     distDir: 'build',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
-    },
-    future: {
-        webpack5: true,
-    },
+    }
 }
 

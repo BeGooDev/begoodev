@@ -24,4 +24,7 @@
     "forwardPorts": [3000],
     "postCreateCommand": "pnpm i",
     "postStartCommand": "pnpm dev",
+    "mounts": [
+        "type=bind,source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,readonly"
+    ]
 }
